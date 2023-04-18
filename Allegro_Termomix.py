@@ -3,13 +3,13 @@ from selenium import webdriver
 from selenium.webdriver.common.by import By
 import unittest
 from selenium.webdriver.firefox.service import Service
-from webdriver_manager.firefox import GeckoDriverManager #pip install webdriver_manager
+from webdriver_manager.firefox import GeckoDriverManager
 
 # Test data
 product_name = "Termomix"
 
 
-class WeresaLogin(unittest.TestCase):
+class AllegroSearchTest(unittest.TestCase):
 
     def setUp(self):
 
@@ -27,7 +27,7 @@ class WeresaLogin(unittest.TestCase):
         # Set to unconditionally wait for an item when searching for a maximum of 10 seconds:
         self.driver.implicitly_wait(10)
 
-    def test_Successful_SignIn(self):
+    def test_Termomix(self):
         driver = self.driver
 
         # STEPS:
